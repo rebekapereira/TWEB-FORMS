@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição nos jogos escolares</title>
+</head>
+<body>
+    <header>
+        <h1>Inscrição nos jogos escolares</h1>
+        Preencha os campos abaixo com suas informações.
+    </header>
+
+    <main>
+        <form id="inscricao-jogos" action="/inscricoes-jogos" method="post" enctype="multipart/form-data" >
+
+            <fieldset>
+                <legend>1. Identificação do atleta</legend>
+                <label for="nome-atleta">Nome completo do atleta(obrigatório)</label>
+            <input type="text" id="nome-atleta" name="nome_atleta" required>
+
+
+            <label for="nomesocial-atleta">Nome social</label>
+            <input type="text" id="nomesocial-atleta" name="nomesocial_atleta">
+
+            <label for="matricula-atleta">Matrícula (obrigatória)</label>
+            <input type="text"  id="matricula-atleta" name="matricula_atleta" required>
+
+            <label for="datadenascimento-atleta">Data de nascimento </label>
+            <input type="date" id="datadenascimento-atleta" name="datadenascimento_atleta">
+
+            <<label for="email-atleta">E-mail de contato (obrigatório)</label>
+            <input type="email" id="email-atleta" name="email_atleta" required>
+
+            <label for="telefone-contato">Telefone de contato</label>
+            <input type="number" id="telefone-contato" name="telefone_contato">
+
+            <label for="site-escola">Site da escola</label>
+            <input type="text" id="site-escola" name="site_escola">
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Escola e delegação</legend>
+                <label for="escolade-origem">Escola de origem</label>
+                <input type="search" id="escola" name="escola" list="escolas">
+
+                <datalist id="escolas">
+                    <option value="Gabriel Diniz"></option>
+                    <option value="Arakén"></option>
+                    <option value="Celso Araujo"></option>
+                </datalist>
+
+                <label for="turmas">Turmas</label>
+                <input type="text">
+                
+
+          
+        </form>
+    </main>
+</body>
+</html>
